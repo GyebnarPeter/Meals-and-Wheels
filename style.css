@@ -1,1 +1,54 @@
+/*
+font-family: 'Overpass Mono', monospace;
+font-family: 'Teko', sans-serif;
+*/
 
+:root {
+    --site-color-red: #d73719;
+    --site-color-orange: #ffa63a;
+}
+
+body {
+    margin: 25px 15px 0 15px;
+    font-family: 'Overpass Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+}
+.nav-btn {
+    background: var(--site-color-red);
+    width: 155px;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.nav-btn-text {
+    margin-top: 4px;
+}
+.burger-icon span {
+    width: 13px;
+    height: 2px;
+    display: block;
+    background: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+header .logo {
+    margin: -25px;
+}
+
+.social img {
+    background: black;
+}
