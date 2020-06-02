@@ -28,8 +28,6 @@ body {
 }
 
 .nav-close-btn {
-    color: white;
-    font-size: 20px;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -113,25 +111,29 @@ nav span svg {
 }
 
 nav span svg:hover {
-    width: 15px;
     fill: var(--site-color-orange);
-    transform: rotate(90deg);
 }
 
 .nav-social-icon {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .nav-social-icon svg {
     fill: var(--site-color-orange);
     width: 20px;
+    height: 20px;
     margin: 0 8px;
     cursor: pointer;
 }
 
 .nav-social-icon svg:hover {
     fill: white;
+}
+
+.menu-btn-toggle {
+    transform: rotate(-90deg);
 }
 
 
@@ -146,6 +148,7 @@ header {
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin: 0 15px;
 }
 
 .nav-btn-wrap {
@@ -252,9 +255,6 @@ header {
 /* SLIDER
 ------------------------------------------------------------------------ */
 
-.slider img {
-    width: 100%;
-}
 
 
 
@@ -266,10 +266,33 @@ header {
     .social-logo {
         display: none;
     }
+
 }
 
 
 @media screen and (max-width: 992px) {
+
+    .nav-close-btn {
+        left: 85%;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    nav ul ul li {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    nav span {
+        width: 38px;
+        height: 38px;
+    }
+    
+    nav span svg {
+        width: 12px;
+    }
 
 }
 
@@ -309,4 +332,5 @@ header {
     .social-wrap {
         display: none;
     }
+
 }
