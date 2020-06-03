@@ -255,7 +255,23 @@ header {
 /* SLIDER
 ------------------------------------------------------------------------ */
 
+.slideshow-wrap img {
+    width: 100%;
+}
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 /* MEDIA QUERIES
@@ -292,6 +308,10 @@ header {
     
     nav span svg {
         width: 12px;
+    }
+
+    .slideshow-wrap {
+        margin: 0;
     }
 
 }
