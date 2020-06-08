@@ -52,9 +52,10 @@ $('.news-btn').click( () => {
 
 let imagesIndex = 0;
 let i = 0;
-let slider = () => {
+let images = document.getElementsByClassName('slider-img');
+let slideText = document.getElementsByClassName('slide-text');
 
-    let images = document.getElementsByClassName('slider-img');
+let slider = () => {
 
     for ( i = 0; i < images.length; ++i ) {
         images[i].style.display = 'none';
@@ -67,7 +68,39 @@ let slider = () => {
     images[imagesIndex].style.display = 'block';
     imagesIndex++;
 
+    let firstMove = () => {
+        slideText[0].classList.add('first-move');
+    }
+    let firstRemove = () => {
+        slideText[0].classList.remove('first-move');
+    }
+
+    let secondMove = () => {
+        slideText[1].classList.add('second-move');
+    }
+    let secondRemove = () => {
+        slideText[1].classList.remove('second-move');
+    }
+
+    let thirdMove = () => {
+        slideText[2].classList.add('third-move');
+    }
+    let thirdRemove = () => {
+        slideText[2].classList.remove('third-move');
+    }
+
     setTimeout(slider, 10000);
+    setTimeout(firstMove, 1000);
+    setTimeout(firstRemove, 7000);
+    setTimeout(secondMove, 2000);
+    setTimeout(secondRemove, 8000);
+    setTimeout(thirdMove, 3000);
+    setTimeout(thirdRemove, 9000);
+
 }
 
 slider();
+
+
+
+
